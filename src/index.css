@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-screen-xl px-5 mx-auto;
+    }
+    .button {
+        @apply font-light uppercase py-2 sm:py-3 px-10 sm:px-20 cursor-pointer;
+    }
+    .button-outline {
+        @apply button border border-[#DEBCAC] rounded-full transition hover:bg-[#DEBCAC] hover:text-white;
+    }
+    .button-fill {
+        @apply button bg-[#DEBCAC] text-white rounded-full transition border hover:border-[#DEBCAC] hover:bg-transparent hover:text-[#DEBCAC];
+    }
+}
